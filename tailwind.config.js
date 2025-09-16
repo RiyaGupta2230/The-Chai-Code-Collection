@@ -1,10 +1,18 @@
-/** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors'
+
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",  // include all JS/JSX/TSX files under src
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    colors: {
+      rose: colors.rose,
+      emerald: colors.emerald,
+      pink: colors.pink,
+      violet: colors.violet,
+      // ...plus DEFAULT Tailwind colors if needed
+    },
     extend: {},
   },
   plugins: [],
